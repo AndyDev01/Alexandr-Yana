@@ -2,7 +2,7 @@ import { ArrowDownIcon } from "../icons/ArrowDownIcon";
 
 export function HeroSection() {
   return (
-    <section className="bg-[url('/public/hero.jpg')] h-screen overflow-hidden  bg-cover bg-center font-greatvibes">
+    <section className="bg-[url('/hero.jpg')] h-screen overflow-hidden  bg-cover bg-center font-greatvibes">
       <div className="flex flex-col gap- justify-between items-center h-full pt-10 pb-20 ">
         <div>
           <span className="text-black text-[5rem] bg-white">

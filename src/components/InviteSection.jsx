@@ -13,7 +13,7 @@ export function InviteSection() {
         </div>
         <div className=" w-1/2 flex justify-center items-center">
           <div className="w-[80%] flex items-center">
-            <img src="./public/invite.jpg" alt="photo2" />
+            <img src="/invite.jpg" alt="photo2" />
           </div>
         </div>
         <div className="px-32">
