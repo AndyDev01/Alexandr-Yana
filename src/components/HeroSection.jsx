@@ -1,4 +1,5 @@
 import { ArrowDownIcon } from "../icons/ArrowDownIcon";
+import { Timer } from "./Timer";
 
 export function HeroSection() {
   return (
@@ -10,7 +11,10 @@ export function HeroSection() {
           </span>
         </div>
         <span className=" text-[16rem]">Александр и Яна</span>
-        <span className=" text-white block text-[5rem]">12.10.2024</span>
+        <span className=" text-white text-2xl block text-[5rem]">
+          До свадьбы осталось
+        </span>
+        <Timer />
         <ArrowDownIcon />
       </div>
     </section>

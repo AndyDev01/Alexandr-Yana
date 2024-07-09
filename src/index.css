@@ -7,3 +7,12 @@
 :root {
   box-sizing: border-box;
 }
+
+.app.loading {
+  background-color: white;
+  transition: background-color 3s ease;
+}
+
+.app.loaded {
+  background-color: initial;
+}
