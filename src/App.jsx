@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`app ${loading ? "loading" : "loaded"}`}>
+    <div className={`${loading ? "loading" : "loaded"}`}>
       <HeroSection />
       <div className="w-[1200px] m-auto px-15">
         <InviteSection />

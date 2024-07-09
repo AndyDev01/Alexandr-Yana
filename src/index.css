@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 
-.app.loading {
+.loading {
   background-color: white;
   transition: background-color 3s ease;
 }
 
-.app.loaded {
+.loaded {
   background-color: initial;
 }
