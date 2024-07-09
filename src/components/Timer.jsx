@@ -52,19 +52,19 @@ export function Timer() {
         timeLeft.hours !== undefined ||
         timeLeft.minutes !== undefined ? (
           <div className="flex gap-8">
-            <span>{`Дней: ${timeLeft.days} ${getPlural(
+            <span>{` ${timeLeft.days} ${getPlural(
               timeLeft.days,
               "день",
               "дня",
               "дней"
             )}`}</span>
-            <span>{`Часов: ${timeLeft.hours} ${getPlural(
+            <span>{`${timeLeft.hours} ${getPlural(
               timeLeft.hours,
               "час",
               "часа",
               "часов"
             )}`}</span>
-            <span>{`Минут: ${timeLeft.minutes} ${getPlural(
+            <span>{`${timeLeft.minutes} ${getPlural(
               timeLeft.minutes,
               "минута",
               "минуты",
