@@ -4,7 +4,7 @@ export function InviteSection() {
       <div className="flex flex-wrap relative">
         <div className="px-32 mt-28 w-1/2">
           <p className="font-greatvibes text-6xl mb-5">Дорогие гости!</p>
-          <p className="mb-5 font-light text-xl">
+          <p className="mb-5 font-light text-xl ">
             В нашей жизни предстоят счастливые перемены! Мы хотим, чтобы в этот
             день рядом с нами были самые близкие и дорогие для нас люди. Будем
             рады разделить с вами чудесный праздник в день нашей свадьбы.

@@ -46,8 +46,8 @@ export function Timer() {
   }, []);
 
   return (
-    <div>
-      <span className="text-white block text-[5rem]">
+    <div className="text-white text-shadow-custom-outline">
+      <span className=" block text-[5rem]">
         {timeLeft.days !== undefined ||
         timeLeft.hours !== undefined ||
         timeLeft.minutes !== undefined ? (
