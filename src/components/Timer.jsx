@@ -1,5 +1,21 @@
 import { useState, useEffect } from "react";
 
+const getPlural = (number, one, two, five) => {
+  if (number % 100 >= 11 && number % 100 <= 14) {
+    return five;
+  }
+  switch (number % 10) {
+    case 1:
+      return one;
+    case 2:
+    case 3:
+    case 4:
+      return two;
+    default:
+      return five;
+  }
+};
+
 export function Timer() {
   const calculateTimeLeft = () => {
     const weddingDate = new Date("2024-10-12T15:30:00");
@@ -10,9 +26,9 @@ export function Timer() {
 
     if (difference > 0) {
       timeLeft = {
-        Дней: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Часов: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        Минут: Math.floor((difference / 1000 / 60) % 60),
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
       };
     }
 
@@ -32,13 +48,28 @@ export function Timer() {
   return (
     <div>
       <span className="text-white block text-[5rem]">
-        {timeLeft.Дней !== undefined ||
-        timeLeft.Часов !== undefined ||
-        timeLeft.Минут !== undefined ? (
+        {timeLeft.days !== undefined ||
+        timeLeft.hours !== undefined ||
+        timeLeft.minutes !== undefined ? (
           <div className="flex gap-8">
-            <span>Дней:{timeLeft.Дней} </span>
-            <span>Часов: {timeLeft.Часов} </span>
-            <span>Минут: {timeLeft.Минут}</span>
+            <span>{`Дней: ${timeLeft.days} ${getPlural(
+              timeLeft.days,
+              "день",
+              "дня",
+              "дней"
+            )}`}</span>
+            <span>{`Часов: ${timeLeft.hours} ${getPlural(
+              timeLeft.hours,
+              "час",
+              "часа",
+              "часов"
+            )}`}</span>
+            <span>{`Минут: ${timeLeft.minutes} ${getPlural(
+              timeLeft.minutes,
+              "минута",
+              "минуты",
+              "минут"
+            )}`}</span>
           </div>
         ) : (
           <span>Свадьба состоялась!</span>
@@ -47,3 +78,5 @@ export function Timer() {
     </div>
   );
 }
+
+export default Timer;
