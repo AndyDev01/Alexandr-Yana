@@ -1,4 +1,5 @@
 import { Details } from "./components/Details";
+import { DressCode } from "./components/DressCode";
 import { HeroSection } from "./components/HeroSection";
 import { InviteSection } from "./components/InviteSection";
 import { Location } from "./components/Location";
@@ -39,7 +40,9 @@ function App() {
         <Location />
         <div className="w-[1200px] m-auto px-15 bg-gray-200/70"></div>
         <Details />
+        <DressCode />
       </div>
+      <div className="bg-[url('4.jpg')] h-screen bg-no-repeat bg-center bg-cover overflow-hidden"></div>
     </>
   );
 }
