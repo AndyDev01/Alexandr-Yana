@@ -8,11 +8,22 @@
   box-sizing: border-box;
 }
 
+.app {
+  transition: opacity 3s ease;
+}
+
 .loading {
   background-color: white;
-  transition: background-color 3s ease;
 }
 
 .loaded {
   background-color: initial;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }

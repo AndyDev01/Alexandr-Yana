@@ -24,17 +24,23 @@ function App() {
   }, []);
 
   return (
-    <div className={`${loading ? "loading" : "loaded"}`}>
-      <HeroSection />
-      <div className="w-[1200px] m-auto px-15">
-        <InviteSection />
-        <TimingSection />
+    <>
+      <div
+        className={`${
+          loading ? "opacity-0" : "opacity-100"
+        } transition-opacity duration-5000`}
+      >
+        <HeroSection />
+        <div className="w-[1200px] m-auto px-15">
+          <InviteSection />
+          <TimingSection />
+        </div>
+        <Organizer />
+        <Location />
+        <div className="w-[1200px] m-auto px-15 bg-gray-200/70"></div>
+        <Details />
       </div>
-      <Organizer />
-      <Location />
-      <div className="w-[1200px] m-auto px-15 bg-gray-200/70"></div>
-      <Details />
-    </div>
+    </>
   );
 }
 
