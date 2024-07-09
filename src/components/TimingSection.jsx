@@ -1,7 +1,7 @@
 export function TimingSection() {
   return (
     <section className="pb-32">
-      <p className="text-center text-5xl pb-24">ТАЙМИНГ</p>
+      <p className="text-center text-6xl pb-24 font-greatvibes">Тайминг</p>
       <div className="flex text-center gap-20">
         <div className="flex flex-col gap-4">
           <p className="text text-3xl">15:30</p>

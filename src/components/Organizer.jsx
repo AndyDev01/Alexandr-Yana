@@ -3,7 +3,9 @@ import { TelegramIcon } from "../icons/TelegramIcon";
 export function Organizer() {
   return (
     <section className="bg-gray-200/70 py-24 flex items-center flex-col">
-      <span className="text-6xl mb-12">СВАДЕБНЫЙ ОРГАНИЗАТОР</span>
+      <span className="text-6xl mb-12 font-greatvibes">
+        Свадебный организатор
+      </span>
       <div className="mb-4 text-center text-xl font-light max-w-[700px]">
         В случае возникновения вопрос в день торжества, обращайтесь к нашему
         свадебному организатору Евгении

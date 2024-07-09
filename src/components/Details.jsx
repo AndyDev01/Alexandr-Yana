@@ -1,10 +1,10 @@
 export function Details() {
   return (
     <section className="bg-gray-200/70 px-[360px] py-24">
-      <p className="text-center text-5xl font-semibold mb-24">ДЕТАЛИ</p>
+      <p className="text-center text-6xl mb-24 font-greatvibes">Детали</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         <div className="bg-white p-6 shadow-md ">
-          <p className="font-semibold mb-4 text-2xl">ПОДАРКИ</p>
+          <p className="font-semibold mb-4 text-2xl">Подарки</p>
           <p className="font-light text-xl">
             Ваши улыбки и смех подарят нам незабываемое счастье в этот день, а
             пожелания в конвертах помогут осуществить наши мечты!

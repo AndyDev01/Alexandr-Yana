@@ -3,7 +3,7 @@ export function InviteSection() {
     <section className="py-32">
       <div className="flex flex-wrap relative">
         <div className="px-32 mt-28 w-1/2">
-          <p className="font-greatvibes text-3xl mb-5">ДОРОГИЕ ГОСТИ!</p>
+          <p className="font-greatvibes text-6xl mb-5">Дорогие гости!</p>
           <p className="mb-5 font-light text-xl">
             В нашей жизни предстоят счастливые перемены! Мы хотим, чтобы в этот
             день рядом с нами были самые близкие и дорогие для нас люди. Будем
