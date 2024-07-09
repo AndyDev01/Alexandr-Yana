@@ -42,7 +42,7 @@ function App() {
         <Details />
         <DressCode />
       </div>
-      <div className="bg-[url('4.jpg')] h-screen bg-no-repeat bg-center bg-cover overflow-hidden"></div>
+      <div className="bg-[url('./4.jpg')] h-screen bg-no-repeat bg-center bg-cover overflow-hidden"></div>
     </>
   );
 }
