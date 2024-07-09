@@ -1,6 +1,12 @@
 export function ArrowDownIcon() {
   return (
-    <svg fill="white" height="40px" width="40px" viewBox="0 0 330 330">
+    <svg
+      className="animate-[bounce_2s_ease-in-out_infinite]"
+      fill="white"
+      height="40px"
+      width="40px"
+      viewBox="0 0 330 330"
+    >
       <path
         id="XMLID_225_"
         d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
