@@ -1,5 +1,6 @@
 import { Details } from "./components/Details";
 import { DressCode } from "./components/DressCode";
+import FormSection from "./components/FormSection";
 import { HeroSection } from "./components/HeroSection";
 import { InviteSection } from "./components/InviteSection";
 import { Location } from "./components/Location";
@@ -41,6 +42,7 @@ function App() {
         <div className="w-[1200px] m-auto px-15 bg-gray-200/70"></div>
         <Details />
         <DressCode />
+        <FormSection />
         <Organizer />
         <SeeYouLater />
       </div>

@@ -17,7 +17,14 @@ export function InviteSection() {
           </div>
         </div>
         <div className="px-32">
-          <button className="text-white px-8 py-3 text-xl bg-black absolute bottom-0">
+          <button
+            className="text-white px-8 py-3 text-xl bg-black absolute bottom-0"
+            onClick={() =>
+              document
+                .getElementById("guest-form")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
             ЗАПОЛНИТЬ АНКЕТУ ГОСТЯ
           </button>
         </div>
