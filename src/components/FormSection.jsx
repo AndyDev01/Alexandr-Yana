@@ -36,8 +36,8 @@ const FormSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const token = "";
-    const chatId = "";
+    const token = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
     const text = `Имя Фамилия: ${formData.name}\nПрисутствие: ${
       formData.presence
     }\nПредпочтения по напиткам: ${formData.drinks.join(
